@@ -1,45 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Product</title>
-</head>
-
-<body>
-  <header>
-    <!-- Логотип -->
-    <a href="./index.html">
-      <img src="./images/header/logo.svg" alt="Logo" width="40" height="36">
-      Product
-    </a>
-    <!-- Навигация -->
-    <nav>
+  <body>
+    <header>
+      <!-- Логотип -->
+      <a href="./index.html">
+        <img src="./images/header/logo.svg" alt="Logo" width="40" height="36" />
+        Product
+      </a>
+      <!-- Навигация -->
+      <nav>
+        <ul>
+          <li>
+            <a href="#">Product</a>
+          </li>
+          <li>
+            <a href="#">Pricing</a>
+          </li>
+          <li>
+            <a href="#">Customers</a>
+          </li>
+          <li>
+            <a href="#">Resources</a>
+          </li>
+        </ul>
+      </nav>
       <ul>
-        <li>
-          <a href="#">Product</a>
-        </li>
-        <li>
-          <a href="#">Pricing</a>
-        </li>
-        <li>
-          <a href="#">Customers</a>
-        </li>
-        <li>
-          <a href="#">Resources</a>
-        </li>
+        <li><button type="button">Sign In</button></li>
+        <li><button type="button">Sign Up</button></li>
       </ul>
-    </nav>
-    <ul>
-      <li><button type="button">Sign In</button></li>
-      <li><button type="button">Sign Up</button></li>
-    </ul>
 
-    <button type="button" aria-label="switch button"><img src="./images/header/drk-mode-btn.svg" alt="Button"></button>
-  </header>
-
-</body>
-
+      <button type="button" aria-label="switch button">
+        <img src="./images/header/drk-mode-btn.svg" alt="Button" />
+      </button>
+    </header>
+    <main>
+      <!-- Hero -->
+      <section>
+        <h1>Work at the speed of thought</h1>
+        <p>
+          Tools, tutorials, design and innovation experts, all in one place! The
+          most intuitive way to imagine your next user experience.
+        </p>
+        <div>
+          <button type="button">Get started</button>
+          <a
+            href="https://youtube.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src="./images/hero/hero-icon.svg"
+              alt="hero-icon"
+              width="20"
+              height="18"
+            />
+            Watch the Video</a
+          >
+        </div>
+        <img
+          src="./images/hero/hero-img.svg"
+          alt="hero-img"
+          width="610"
+          height="555"
+        />
+      </section>
+    </main>
+  </body>
 </html>
