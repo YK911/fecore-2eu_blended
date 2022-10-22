@@ -3,6 +3,7 @@ body {
   color: #22343d;
 }
 
+
 .list {
   list-style: none;
 }
@@ -35,6 +36,15 @@ img {
 }
 
 /* common styles */
+
+
+.container {
+  width: 1150px;
+  padding: 0 20px;
+  margin: 0 auto;
+  outline: 2px solid red;
+  outline-offset: -2px;
+}
 
 .section-title {
   font-size: 32px;
@@ -71,19 +81,48 @@ img {
 }
 
 /* header */
+
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
 .header-logo {
+  display: flex;
+  align-items: center;
   font-weight: 700;
   font-size: 30px;
   line-height: 0.93;
   color: #173a56;
+  margin-right: auto;
+}
+
+.logo-img {
+  margin-right: 16px;
+}
+
+.header-nav {
+  margin-right: 24px;
+}
+
+.header-list {
+  display: flex;
+  align-items: center;
+  gap: 30px;
 }
 
 .header-link {
+  display: block;
   line-height: 1.75;
+  padding: 26px 0;
 }
 
 .header-link.current {
   font-weight: 600;
+}
+
+.header-button {
+  padding: 9px 24px;
 }
 
 .switch-button {
