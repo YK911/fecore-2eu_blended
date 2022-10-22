@@ -123,6 +123,10 @@ img {
   font-weight: 600;
 }
 
+.header-button {
+  padding: 9px 24px;
+}
+
 .switch-button {
   width: 32px;
   height: 32px;
