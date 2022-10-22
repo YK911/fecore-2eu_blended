@@ -24,133 +24,139 @@
   <body>
     <!-- header -->
     <header class="header">
-      <a class="header-logo link" href="#">
-        <img
-          class="logo-img"
-          src="./image/header/logo.svg"
-          alt="logo"
-          width="40"
-          height="36"
-        />Product</a
-      >
+      <div class="container header-container">
+        <a class="header-logo link" href="#">
+          <img
+            class="logo-img"
+            src="./image/header/logo.svg"
+            alt="logo"
+            width="40"
+            height="36"
+          />Product</a
+        >
 
-      <nav class="header-nav">
-        <ul class="list header-list header-nav-menu">
+        <nav class="header-nav">
+          <ul class="list header-list header-nav-menu">
+            <li class="header-item">
+              <a class="header-link link current" href="">Product</a>
+            </li>
+            <li class="header-item">
+              <a class="header-link link" href="">Pricing</a>
+            </li>
+            <li class="header-item">
+              <a class="header-link link" href="">Customers</a>
+            </li>
+            <li class="header-item">
+              <a class="header-link link" href="">Resources</a>
+            </li>
+          </ul>
+        </nav>
+
+        <ul class="list header-list header-list-btn">
           <li class="header-item">
-            <a class="header-link link current" href="">Product</a>
+            <button class="btn btn-primary header-button" type="button">Sign In</button>
           </li>
           <li class="header-item">
-            <a class="header-link link" href="">Pricing</a>
+            <button class="btn btn-accent header-button" type="button">Sign Up</button>
           </li>
           <li class="header-item">
-            <a class="header-link link" href="">Customers</a>
-          </li>
-          <li class="header-item">
-            <a class="header-link link" href="">Resources</a>
+            <button class="btn switch-button" type="button" aria-label="switch-button">
+              <img
+                class="button-icon"
+                src="./image/header/icon-dark-light.svg"
+                alt="icon"
+                width="24"
+                height="24"
+              />
+            </button>
           </li>
         </ul>
-      </nav>
-
-      <ul class="list header-list header-list-btn">
-        <li class="header-item">
-          <button class="btn btn-primary header-button" type="button">Sign In</button>
-        </li>
-        <li class="header-item">
-          <button class="btn btn-accent header-button" type="button">Sign Up</button>
-        </li>
-        <li class="header-item">
-          <button class="btn switch-button" type="button" aria-label="switch-button">
-            <img
-              class="button-icon"
-              src="./image/header/icon-dark-light.svg"
-              alt="icon"
-              width="24"
-              height="24"
-            />
-          </button>
-        </li>
-      </ul>
+      </div>
     </header>
     <main>
       <!-- hero -->
-      <section class="hero">
-        <h1 class="hero-title">Work at the speed of&nbsp;thought</h1>
-        <p class="hero-text">
-          Tools, tutorials, design and innovation experts, all in one place! The most intuitive way
-          to imagine your next user experience.
-        </p>
-        <button class="hero-btn btn btn-accent" type="button">Get started</button>
-        <a class="hero-link link" href=""
-          ><img
-            class="hero-icon"
-            src="./image/hero/hero-icon.svg"
-            alt="play-icon"
-            width="20"
-            height="18"
+      <section class="hero section">
+        <div class="container hero-container">
+          <div class="hero-wrapper">
+            <h1 class="hero-title">Work at the speed of&nbsp;thought</h1>
+            <p class="hero-text">
+              Tools, tutorials, design and innovation experts, all in one place! The most intuitive
+              way to imagine your next user experience.
+            </p>
+            <div class="hero-group">
+              <button class="hero-btn btn btn-accent" type="button">Get started</button>
+              <a class="hero-link link" href=""
+                ><img
+                  class="hero-icon"
+                  src="./image/hero/hero-icon.svg"
+                  alt="play-icon"
+                  width="20"
+                  height="18"
+                />
+                Watch the Video</a
+              >
+            </div>
+          </div>
+          <img
+            class="hero-img"
+            src="./image/hero/hero-img.svg"
+            alt="hero-image"
+            width="610"
+            height="555"
           />
-          Watch the Video</a
-        >
-        <img
-          class="hero-img"
-          src="./image/hero/hero-img.svg"
-          alt="hero-image"
-          width="610"
-          height="555"
-        />
+        </div>
       </section>
 
-      <!-- feautures -->
-      <section class="feautures section">
-        <h2 class="section-title feautures-title">Product was Built Specifically for&nbsp;You</h2>
-        <ul class="list feautures-list">
+      <!-- features -->
+      <section class="features section">
+        <h2 class="section-title features-title">Product was Built Specifically for&nbsp;You</h2>
+        <ul class="list features-list">
           <li class="feautures-item">
             <img
-              class="feautures-img"
+              class="features-img"
               src="./image/features/icon-1.svg"
               alt=""
               width="54"
               height="62"
             />
-            <h3 class="feautures-subtitle">First click tests</h3>
-            <p class="feautures-text">While most people enjoy casino gambling,</p>
+            <h3 class="features-subtitle">First click tests</h3>
+            <p class="features-text">While most people enjoy casino gambling,</p>
           </li>
-          <li class="feautures-item">
+          <li class="features-item">
             <img
-              class="feautures-img"
+              class="features-img"
               src="./image/features/icon-2.svg"
               alt=""
               width="54"
               height="62"
             />
-            <h3 class="feautures-subtitle">Design surveys</h3>
-            <p class="feautures-text">Sports betting, lottery and bingo playing for the fun</p>
+            <h3 class="features-subtitle">Design surveys</h3>
+            <p class="features-text">Sports betting, lottery and bingo playing for the fun</p>
           </li>
-          <li class="feautures-item">
+          <li class="features-item">
             <img
-              class="feautures-img"
+              class="features-img"
               src="./image/features/icon-3.svg"
               alt=""
               width="54"
               height="62"
             />
-            <h3 class="feautures-subtitle">Preference tests</h3>
-            <p class="feautures-text">The Myspace page defines the individual.</p>
+            <h3 class="features-subtitle">Preference tests</h3>
+            <p class="features-text">The Myspace page defines the individual.</p>
           </li>
-          <li class="feautures-item">
+          <li class="features-item">
             <img
-              class="feautures-img"
+              class="features-img"
               src="./image/features/icon-4.svg"
               alt=""
               width="54"
               height="62"
             />
-            <h3 class="feautures-subtitle">Five second tests</h3>
-            <p class="feautures-text">
-              Personal choices and the overall personality of the person.
-            </p>
+            <h3 class="features-subtitle">Five second tests</h3>
+            <p class="features-text">Personal choices and the overall personality of the person.</p>
           </li>
         </ul>
-        <button class="feautures-btn btn btn-accent" type="button">SIGN UP NOW</button>
+        <button class="features-btn btn btn-accent" type="button">SIGN UP NOW</button>
       </section>
 
       <!-- managment -->
