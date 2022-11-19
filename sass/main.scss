@@ -1,0 +1,19 @@
+// utility styles
+@import "./utils/variables";
+@import "./utils/normalize";
+@import "./utils/mixins";
+@import "./utils/placeholders";
+
+// common styles
+@import "./common/common";
+@import "./common/reset";
+@import "./common/animations";
+@import "./common/container";
+
+// components styles
+@import "./components/header";
+@import "./components/menu";
+@import "./components/team";
+@import "./components/socials";
+@import "./components/clients";
+@import "./components/modal";

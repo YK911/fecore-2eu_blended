@@ -1,0 +1,31 @@
+.clients {
+  @include section-indent;
+}
+.clients__title {
+  @extend %section-title;
+}
+.clients__list {
+  @include grid;
+}
+.clients__item {
+  @include grid-item(6);
+}
+.clients__link {
+  @extend %flex-centerd;
+  @include transitions(color, border-color);
+
+  width: 100%;
+  height: 92px;
+  border: 1px solid $border-cl;
+  border-radius: $small-radius;
+  color: $icon-cl;
+
+  &:hover,
+  &:focus {
+    color: $accent-cl;
+    border-color: $accent-cl;
+  }
+}
+.clients__icon {
+  fill: currentColor;
+}

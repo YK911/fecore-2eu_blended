@@ -1,0 +1,56 @@
+// section indent mixin
+@mixin section-indent($pt: 94px, $pb: $pt) {
+  padding-top: $pt;
+  padding-bottom: $pb;
+}
+
+// $Param [Number] - set vertical indent for sections
+// usage:
+// .section {
+//   @include section-indent(120px);
+// }
+// output:
+// .section {
+//   padding-top: 94px;
+//   padding-bottom: 94px;
+// }
+
+// grid mixin
+@mixin grid($indent: 30px) {
+  display: flex;
+  flex-wrap: wrap;
+  gap: $indent;
+}
+
+@mixin grid-item($items: 1, $indent: 30px) {
+  flex-basis: calc((100% - $indent * ($items - 1)) / $items);
+}
+
+// transitions mixin
+@mixin transitions($properties...) {
+  transition-property: $properties;
+  transition-duration: 300ms;
+  transition-timing-function: ease;
+}
+
+// fonts mixin
+@mixin fonts($fs: false, $lh: false, $colour: false, $fw: false, $ls: 0.03em, $family: false) {
+  @if $family {
+    font-family: $family, sans-serif;
+  }
+  @if $fw {
+    font-weight: $fw;
+  }
+  @if $fs {
+    font-size: $fs;
+  }
+  @if $lh {
+    line-height: $lh / $fs;
+  }
+  @if $ls {
+    letter-spacing: normal;
+  }
+  @if $colour {
+    color: $colour;
+  }
+}

@@ -1,0 +1,22 @@
+.header {
+  position: sticky;
+  top: -1px;
+  box-shadow: 0px 2px 4px -1px rgb(0 0 0 / 20%), 0px 4px 5px 0px rgb(0 0 0 / 14%),
+    0px 1px 10px 0px rgb(0 0 0 / 12%);
+
+  .container {
+    min-height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+}
+
+.header__btn {
+  padding: 10px 20px;
+  border-radius: $middle-radius;
+
+  border: none;
+  color: $light-cl;
+  background-color: $accent-cl;
+}

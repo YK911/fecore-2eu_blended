@@ -1,0 +1,34 @@
+.team {
+  @include section-indent;
+  background-color: #f5f4fa;
+}
+.team__title {
+  @extend %section-title;
+}
+.team__list {
+  @include grid;
+}
+.team__item {
+  @include grid-item(4);
+
+  background: #ffffff;
+
+  box-shadow: $shadow;
+  border-radius: 0px 0px 4px 4px;
+}
+.team__wrapper {
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  text-align: center;
+}
+.team__subtitle {
+  @include fonts(16px, 19px, #212121, 500);
+
+  margin-bottom: 10px;
+}
+.team__desc {
+  @include fonts(16px, 19px, #757575);
+
+  margin-bottom: 16px;
+}
